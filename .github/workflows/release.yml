@@ -6,8 +6,18 @@ on:
     types:
       - completed
     branches: ["main"]
-  
+    
+permissions:
+  contents: read
+
 jobs:
   release:
-    name: Tag and release
+    name: Release Job
     runs-on: ubuntu-latest
+
+    steps:
+      - name: Start Release
+        run: echo "Release triggered by Build Workflow!"
+
+      - name: Deploy
+        run: echo "Deploying the project..."
