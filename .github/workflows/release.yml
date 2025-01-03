@@ -5,8 +5,8 @@ on:
     workflows: ["Build and Test"]
     types:
       - completed
-    branches: ["test"]
-    
+    branches: 
+      - 'test'
 permissions:
   contents: read
 
